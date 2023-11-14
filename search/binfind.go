@@ -4,15 +4,12 @@ package search
 // Falls x nicht gefunden wird, wird -1 zurückgegeben.
 // Da die Liste sortiert ist, wird die binäre Suche verwendet.
 func FindSorted(list []int, x int) int {
-	// begin:hint
 	// Idee: Teile die Liste in zwei Hälften und suche in der richtigen Hälfte weiter.
 	//       Dadurch wird die Liste in jedem Schritt halbiert, was die Suche beschleunigt.
 	//
 	// Rekursionsanker: Abbruch falls Liste leer.
 	// Rekursionsanker: Abbruch falls das mittlere Element x ist.
 	// Rekursionsschritt: Suche in der linken oder rechten Hälfte.
-	// end:hint
-	// begin:solution
 	if len(list) == 0 {
 		return -1
 	}
@@ -31,6 +28,4 @@ func FindSorted(list []int, x int) int {
 		return -1
 	}
 	return pos + offset
-	// end:solution
-	// iftask: return -1
 }
