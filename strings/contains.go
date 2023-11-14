@@ -7,11 +7,7 @@ func Contains(s, seq string) bool {
 	// Wenn s mit seq beginnt, ist das Ergebnis true.
 	//   (Verwenden Sie die Hilfsfunktion StartsWith aus startswith.go.)
 	// Wenn s nicht mit seq beginnt, ist das Ergebnis Contains(s[1:], seq).
-	if seq == "" {
-		return true
-	}
-	if s == "" {
-		return false
-	}
-	return StartsWith(s, seq) || Contains(s[1:], seq)
+
+	// TODO
+	return false
 }

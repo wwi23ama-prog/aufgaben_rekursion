@@ -8,7 +8,6 @@ func Partition(list []int, key int) ([]int, []int) {
 	l1 := append([]int{}, list...)
 	l2 := append([]int{}, list...)
 
-	// Verwenden Sie die Funktionen FilterLess und FilterGreater.
-	// Die Funktion Partition selbst muss nicht rekursiv sein.
-	return FilterLess(l1, key), FilterGreater(l2, key)
+	// TODO
+	return l1, l2
 }

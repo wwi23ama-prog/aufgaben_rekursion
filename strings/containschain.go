@@ -11,11 +11,7 @@ func ContainsChain(s, symbol string, count int) bool {
 	//    count-1 aufeinanderfolgenden Vorkommen von symbol.
 	// 2. s beginnt nicht mit symbol, aber s[1:] enthält eine Kette von
 	//    count aufeinanderfolgenden Vorkommen von symbol.
-	if count == 0 {
-		return true
-	}
-	if s == "" {
-		return symbol == ""
-	}
-	return (s[:1] == symbol && StartsWith(s[:1], Chain(symbol, count-1))) || ContainsChain(s[1:], symbol, count)
+
+	// TODO
+	return false
 }

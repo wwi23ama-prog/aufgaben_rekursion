@@ -7,16 +7,7 @@ func Find(list []int, x int) int {
 	// Rekursionsanker: Abbruch falls Liste leer.
 	// Rekursionsanker: Abbruch falls das erste Element x ist.
 	// Rekursionsschritt: Suche in der Restliste.
-	if len(list) == 0 {
-		return -1
-	}
-	if list[0] == x {
-		return 0
-	}
-	pos := Find(list[1:], x)
 
-	if pos == -1 {
-		return -1
-	}
-	return Find(list[1:], x) + 1
+	// TODO
+	return -1
 }

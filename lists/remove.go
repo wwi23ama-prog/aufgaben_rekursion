@@ -11,11 +11,7 @@ func RemoveElement(list []int, pos int) []int {
 	// Wenn pos 0 ist, ist das Ergebnis die Restliste.
 	// Wenn pos größer als 0 ist, ist das Ergebnis das erste Element
 	// plus die Restliste ohne das Element an Stelle pos-1.
-	if Empty(list) {
-		return list
-	}
-	if pos == 0 {
-		return list[1:]
-	}
-	return append(list[:1], RemoveElement(list[1:], pos-1)...)
+
+	// TODO
+	return list
 }

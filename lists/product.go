@@ -7,8 +7,7 @@ package lists
 func Product(list []int) int {
 	// Wenn die Liste leer ist, ist das Produkt 1.
 	// Wenn die Liste nicht leer ist, ist das Produkt das erste Element mal das Produkt der Restliste.
-	if Empty(list) {
-		return 1
-	}
-	return list[0] * Product(list[1:])
+
+	// TODO
+	return 1
 }
